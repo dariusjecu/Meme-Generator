@@ -34,7 +34,7 @@ h1, h3{
 }
 
 .logo img{
-  width: 9vh;
+  width: 4rem;
   margin-right: 1em;
 }
 
@@ -112,10 +112,78 @@ h1, h3{
   z-index: -1;
 }
 
-@media (min-width: 450px) and (max-width:750px)
-{
+/*-------------------------Mobile-------------------------*/
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: .5rem;
+  }
+  .header{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   .content{
-    width: 95vw;
-    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "ad1"
+      "ad2"
+      "btn"
+      "txt1"
+      "img"
+      "txt2";
+    width: 80%;
+  }
+  #image{
+    width: 100%;
+    height: 15rem;
+  }
+  .content button{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .content input{
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .text1, .text2{
+    font-size: 1rem;
+  }
+}
+
+/*-------------------------Tablet-------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+  body{
+    font-size: .9em;
+  }
+  .header{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .content{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "ad1"
+      "ad2"
+      "btn"
+      "txt1"
+      "img"
+      "txt2";
+    width: 80%;
+  }
+  #image{
+    width: 100%;
+    height: 30rem;
+  }
+  .content button{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .content input{
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .text1, .text2{
+    font-size: 1.5rem;
   }
 }

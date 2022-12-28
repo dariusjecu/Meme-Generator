@@ -7,7 +7,7 @@ export default function Header(){
                 <img src="../../public/img/logo.png" />
                 <h1>Meme Generator</h1>
             </div>
-            <h3>React Course - Project 3</h3>  
+            <h3></h3>  
         </div>
     )
 }
